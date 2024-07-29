@@ -16,4 +16,5 @@ data "hcp_vault_secrets_secret" "demo_secret" {
 
 output "secret" {
   value = data.hcp_vault_secrets_secret.demo_secret.secret_value
+  sensitive = true
 }
